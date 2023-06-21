@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="shortcut icon" href="icons8-calculator.gif">
+    <meta name="language" content="English">
+    <meta name="author" content="Debraj Dey">
+    <meta name="description"
+        content="A simple calculator with neumorphic design along with dark mode/light mode toogle switch">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="dark.css" id="theme-style-dark" disabled>
+    <link rel="stylesheet" href="light.css" id="theme-style">
+</head>
+
+<body>
+    <header>
+        <div id="name">Calculator</div>
+        <div class="social-buttons">
+            <a href="mailto:deydebraj20002@gmail.com" target="_blank" class="round-button email-button">
+                <i class="fas fa-envelope fa-lg"></i>
+            </a>
+            <a href="https://github.com/Debraj-Dey" target="_blank" class="round-button github-button">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/debraj-dey/" target="_blank" class="round-button linkedin-button">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <div class="toggle-switch-container">
+                <div class="toggle-switch"></div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="calculator">
+                <div id="result_area">
+                    <div id="history">
+                        <p></p>
+                    </div>
+                    <div id="output">
+                        <p></p>
+                    </div>
+                </div>
+
+                <button class="op_key" id="clear">AC</button>
+                <button class="op_key" id="backspace">del</button>
+                <button class="op_key" id="%">%</button>
+                <button class="op_key" id="/">&#247;</button>
+                <button class="num_key" id="7">7</button>
+                <button class="num_key" id="8">8</button>
+                <button class="num_key" id="9">9</button>
+                <button class="op_key" id="*">&times;</button>
+                <button class="num_key" id="4">4</button>
+                <button class="num_key" id="5">5</button>
+                <button class="num_key" id="6">6</button>
+                <button class="op_key" id="-">-</button>
+                <button class="num_key" id="1">1</button>
+                <button class="num_key" id="2">2</button>
+                <button class="num_key" id="3">3</button>
+                <button class="op_key" id="+">+</button>
+                <button class="op_key" id=".">.</button>
+                <button class="num_key" id="0">0</button>
+                <button class="op_key equal" id="=">=</button>
+                <br>
+                <footer>
+                    <p><b>&copy; Created by Debraj</b></p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src='script.js' type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2a2727;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #2a2727;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 6.01px 6.01px 11px #191818, -6.01px -6.01px 11px #3F3B3B;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#name {
+    position: fixed;
+    top: 5px;
+    z-index: 9999;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: rgb(255, 98, 0);
+    color: white;
+    padding: 10px 30px 12px 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 18.62px 18.62px 22px #151414, -18.62px -18.62px 22px #3F3B3B;
+    text-shadow: -1px -1px 2px #FFF,
+        2px 2px 2px rgba(0, 0, 0, 0.4);
+    transition: width 0.5s ease;
+    width: 120px;
+}
+
+#name:hover {
+    background-color: rgb(239, 72, 1);
+    width: 270px;
+}
+
+.social-buttons {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 9999;
+}
+
+
+.round-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 21px;
+    transition: color 0.1s;
+}
+
+.round-button:hover {
+    transform: scale(1.3);
+}
+
+.email-button {
+    margin-bottom: 10px;
+}
+
+.email-button:hover {
+    color: rgb(230, 5, 5);
+}
+
+.github-button {
+    margin-bottom: 10px;
+}
+
+.github-button:hover {
+    color: rgb(133, 128, 128);
+}
+
+.linkedin-button {
+    margin-bottom: 0;
+}
+
+.linkedin-button:hover {
+    color: rgb(0, 115, 255);
+}
+
+#result_area {
+    grid-column: span 4;
+    height: 130px;
+    width: 300px;
+    background-color: #2a2727;
+    text-shadow: -0.5px -0.5px 1px #FFF,
+        2px 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 6.01px 6.01px 11px #151414, inset -6.01px -6.01px 11px #444040;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+#history {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #b9b6b6;
+}
+
+#output {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+button {
+    height: 55px;
+    width: 55px;
+    background-color: #2a2727;
+    box-shadow: 7.51px 7.51px 12px #101010, -7.51px -7.51px 12px #211f1f;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+button:hover {
+    background-color: #000;
+    box-shadow: 0 0 0 2em rgba(#fff, 0);
+    transform: translateY(-0.25em);
+}
+
+.op_key {
+    color: rgb(255, 98, 0);
+    font-weight: 500;
+}
+
+.equal {
+    width: 138px;
+    border-radius: 30px;
+    font-size: 30px;
+    background-color: rgb(255, 98, 0);
+    color: white;
+}
+
+.equal:hover {
+    background-color: rgb(255, 98, 0);
+    box-shadow: 0 0 0 2em rgba(#fff, 0);
+    transform: translateY(-0.25em);
+}
+
+footer {
+    font-family: sans-serif;
+    font-size: 11pt;
+    font-style: italic;
+    color: rgb(255, 98, 0);
+    font-weight: 500;
+    text-align: center;
+    width: 150px;
+    margin-top: 15px;
+}
+
+footer:hover {
+    text-shadow: -1px -1px 2px #FFF,
+    2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-switch-container {
+    display: flex;
+    margin-top: 20px;
+    float: right;
+    margin-left: 15px;
+    width: 50px;
+    height: 25px;
+
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 26px;
+    width: 48px;
+    background-color: #999;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    content: '';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch.dark {
+    background-color: #333;
+}
+
+.toggle-switch.dark::before {
+    transform: translateX(24px);
+}
+
+.toggle-switch.light::before {
+    transform: translateX(0);
+}
